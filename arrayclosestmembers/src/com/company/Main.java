@@ -3,7 +3,7 @@ import java.lang.Math;
 
 
 public class Main {
-    static int[] A = {1, 4, 9, 11, 15,15};
+    static int[] A = {1, 4, 9, 11, 15,16};
     public static void main(String[] args) {
         int min = 2147483647;
         for (int i = 0; i < A.length - 1; i++) {

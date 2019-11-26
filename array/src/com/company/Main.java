@@ -24,7 +24,7 @@ public class Main
             total = total + data[x];
         }
         output("Total = " + total);
-        double average = total/(x-1);
+        double average = total/data.length;
         String formatted = String.format("%.2f", average);
         output("Average = " + formatted);
     }
@@ -36,10 +36,10 @@ public class Main
         {
             info = info + data[c] + ", ";
         }
-        output(info);
+        output("Array: " + info);
     }
     static void findMax(){
-        double Big = 0;
+        double Big = data[0];
         for(int i = 0; i < data.length; i++){
             if(Big< data[i])
                 Big = data[i];
@@ -47,7 +47,7 @@ public class Main
         output("Biggest = " + Big);
     }
     static void findMin(){
-        double min = 2147483647;
+        double min = data[0];
         for(int i = 0; i < data.length; i++){
             if(min > data[i])
                 min = data[i];
